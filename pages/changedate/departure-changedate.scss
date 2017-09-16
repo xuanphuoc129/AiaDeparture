@@ -12,41 +12,39 @@ page-departure-changedate {
     $titleHeight: 30px;
     $rowHeight: 56px;
     $background: linear-gradient(to right, #17cce9, #34a1ca);
-    .change-date-header {
-        height: 96px;
-        color: #FFF;
-        text-align: center;
-        font-size: 1.2em;
-        font-weight: bold;
+    .height-56 {
+        height: $rowHeight;
+    }
+    .a-header {
         background: $background;
-        // border-bottom: solid 1px #123;
-        .today {
-            height: $heiderHeight/2;
-            font-size: .7em;
-            color: #FFF;
-            border: solid 1px #FFF;
-            border-radius: 10px;
-            padding: 0 8px;
-            text-transform: none;
-            font-weight: normal;
-            white-space: nowrap;
-        }
-        .date-today {
-            font-size: .8em;
-        }
-        .a-header-button {
-            padding: 0.5em;
-            border-radius: 50%;
-            border: 1px solid white;
-        }
-        .a-header-button img {
-            height: 1.8em;
-        }
-        .a-header-title {
-            font-size: 5vw;
-            text-align: center;
-            color: white;
-        }
+    }
+    .today {
+        height: $heiderHeight/2;
+        font-size: .7em;
+        color: #FFF;
+        border: solid 1px #FFF;
+        border-radius: 10px;
+        padding: 0 8px;
+        text-transform: none;
+        font-weight: normal;
+        white-space: nowrap;
+    }
+    .date-today {
+        font-size: .8em;
+    }
+    .a-header-button {
+        // padding: 0.6em;
+        padding: 0.5em;
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    .a-header-button img {
+        height: 1.5em;
+    }
+    .a-header-title {
+        font-size: 5vw;
+        text-align: center;
+        color: white;
     }
     .width-40 {
         width: 40%;
