@@ -1,0 +1,40 @@
+page-departure-more {
+    $heightheader: 56px;
+    $background: linear-gradient(to right, #17cce9, #34a1ca);
+    .a-header {
+        background: $background;
+        .a-header-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        .a-header-button {
+            img {
+                height: $heightheader;
+                padding: 5px;
+            }
+        }
+    }
+    .height-56 {
+        height: $heightheader;
+    }
+    .body-content {
+        .line {
+            background-color: #ccc;
+            height: 1px;
+            width: 90%;
+        }
+        .icon-option {
+            width: 30%;
+            img {
+                height: 2.5em;
+            }
+        }
+        .name-option {
+            width: 70%;
+            font-size: 1em;
+            padding: 0.5em;
+        }
+    }
+}

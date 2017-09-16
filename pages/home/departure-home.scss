@@ -1,0 +1,186 @@
+page-departure-home {
+    .scroll-content {
+        margin-top: 16vw !important;
+        margin-bottom: 56px !important;
+    }
+    .font-shadow {
+        color: white;
+        font-family: "Myriad Pro", sans-serif;
+        text-shadow: 1px 0px #333333;
+    }
+    .font-italic {
+        font-style: italic;
+    }
+    .a-qoute {
+        // background-image: url("../assets/departure/frame_quote.png");
+        // background-position: center;
+        // background-size: 100vw;
+        color: #727272;
+        font-size: 1em;
+        line-height: 1.5em;
+        padding: 5px 30px 0px 30px;
+        width: 100%;
+    }
+    .a-qoute-day {
+        // padding: 20px;
+        padding: 20px 0 0 30px;
+        text-transform: capitalize;
+        width: 100%;
+        font-size: 1.3em;
+    }
+    .a-header-button {
+        padding: 0.5em;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 2.5em;
+        width: 2.5em;
+    }
+    .a-header-title {
+        font-size: 1em;
+        text-align: center;
+        color: white;
+    }
+    .a-footer {
+        color: #584E4E;
+        font-size: 0.7em;
+        margin-top: 45px;
+        text-align: center;
+        width: 100%;
+    }
+    .a-footer-item {
+        min-width: 60px;
+        text-align: center;
+    }
+    .a-footer-detail {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: black;
+    }
+    .a-footer-note {
+        font-size: 1.2em;
+        color: #b7b7b7;
+    }
+    .a-border-bottom {
+        border-bottom: 1px solid #ccc;
+    }
+    .a-title {
+        padding-bottom: 5px;
+        font-size: 1.2em;
+        color: #474848;
+    }
+    .a-row-dot {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        .line {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 1px;
+            width: 100%;
+            background-color: #ccc;
+            z-index: -1;
+        }
+    }
+    .dot-large {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    .dot-small {
+        width: 0.6em;
+        height: 0.6em;
+        // padding: 0.25em;
+        margin: 0.2em;
+        border-radius: 50%;
+    }
+    [nowrap] {
+        white-space: nowrap;
+    }
+    .height-56 {
+        height: 56px;
+    }
+    //  ======================
+    #departure-background {
+        // background-color: white;
+        // background-image: url('../assets/departure/background/background-home.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        -webkit-transition: background-image .4s ease-in-out;
+        transition: background-image .4s ease-in-out;
+    }
+    #cube {
+        width: 100%;
+        height: 100%;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: -webkit-transform .6s;
+        -moz-transition: -moz-transform .6s;
+        -o-transition: -o-transform .6s;
+        transition: transform .6s;
+    }
+    #cube.panels-backface-invisible div {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    #cube .front {
+        -webkit-transform: translateZ( 30vw);
+        -moz-transform: translateZ( 30vw);
+        -o-transform: translateZ( 30vw);
+        transform: translateZ( 30vw);
+    }
+    #cube .back {
+        -webkit-transform: rotateX( -180deg) translateZ( 30vw);
+        -moz-transform: rotateX( -180deg) translateZ( 30vw);
+        -o-transform: rotateX( -180deg) translateZ( 30vw);
+        transform: rotateX( -180deg) translateZ( 30vw);
+    }
+    #cube .right {
+        -webkit-transform: rotateY( 90deg) translateZ( 30vw);
+        -moz-transform: rotateY( 90deg) translateZ( 30vw);
+        -o-transform: rotateY( 90deg) translateZ( 30vw);
+        transform: rotateY( 90deg) translateZ( 30vw);
+    }
+    #cube .left {
+        -webkit-transform: rotateY( -90deg) translateZ( 30vw);
+        -moz-transform: rotateY( -90deg) translateZ( 30vw);
+        -o-transform: rotateY( -90deg) translateZ( 30vw);
+        transform: rotateY( -90deg) translateZ( 30vw);
+    }
+    #cube .contentback {
+        width: 100%;
+        height: 100%;
+        transform: rotateZ(180deg);
+    }
+    //============== Dinh Anh ==================
+    .a-cube-wrapper {
+        position: relative;
+        width: 55%;
+        height: 100%;
+        margin: auto;
+        -webkit-perspective: 1000px;
+        -moz-perspective: 1000px;
+        -o-perspective: 1000px;
+        perspective: 1000px;
+    }
+    .a-cube-day {
+        font-size: 4vh;
+        text-align: center;
+        text-transform: inherit;
+    }
+    .a-cube-date {
+        font-size: 16vh;
+        text-align: center;
+        font-weight: 200;
+    }
+}

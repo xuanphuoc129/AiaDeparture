@@ -1,0 +1,136 @@
+<ion-content id="departure-background" class="background" no-bounce>
+
+    <div class="a1-container" id="iAppContent">
+        <div class="a1-width-100 a1-height-50">
+            <div class="a-cube-wrapper">
+                <div id="cube" class="panels-backface-invisible">
+                    <div class="a1-container-absolute front">
+                        <div class="a3-container a3-justify-center a3-column a1-fill-parent">
+                            <div class="a-cube-day font-shadow">
+                                {{day_of_week}}
+                            </div>
+                            <div class="a-cube-date font-shadow">
+                                {{solarDate}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1-container-absolute back">
+                        <div class="contentback">
+                            <div class="a3-container a3-justify-center a3-column a1-fill-parent">
+                                <div class="a-cube-day font-shadow">
+                                    {{day_of_week}}
+                                </div>
+                                <div class="a-cube-date font-shadow">
+                                    {{solarDate}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1-container-absolute right">
+                        <div class="a3-container a3-justify-center a3-column a1-fill-parent">
+                            <div class="a-cube-day font-shadow">
+                                {{day_of_week}}
+                            </div>
+                            <div class="a-cube-date font-shadow">
+                                {{solarDate}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="a1-container-absolute left">
+                        <div class="a3-container a3-justify-center a3-column a1-fill-parent">
+                            <div class="a-cube-day font-shadow">
+                                {{day_of_week}}
+                            </div>
+                            <div class="a-cube-date font-shadow">
+                                {{solarDate}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div text-left class="a-qoute-day" id="quote-fg" style="color:#a42b4b">
+            Ngày {{name_of_date}}
+        </div>
+        <div text-left class="a-qoute a1-height-10">
+            <q>{{quote_of_date}}</q>
+        </div>
+
+        <div class="a-footer a3-container-center ">
+
+            <div class="a-footer-item a1-relative">
+                <div class="a1-text-center a-title">Giờ</div>
+                <div class="a-row-dot">
+                    <div class="line"></div>
+                    <div class="dot-large" style="background-color: #4dffa6">
+                        <div class="dot-small" style="background-color: #00cc66"></div>
+                    </div>
+                </div>
+                <div text-center class="a1-container">
+                    <div class="a1-height-30 a3-container-center a-footer-detail">{{nowtime | date: "HH:mm"}}</div>
+                    <div class="a1-height-30 a3-container-center a-footer-note">{{sexagesimalCycleTime}}</div>
+                </div>
+            </div>
+
+            <div class="a-footer-item a1-relative">
+                <div class="a1-text-center a-title">Ngày</div>
+                <div class="a-row-dot">
+                    <div class="line"></div>
+                    <div class="dot-large" style="background-color: #ffffb3">
+                        <div class="dot-small" style="background-color:  #e6e600"></div>
+                    </div>
+                </div>
+                <div text-center class="a1-container ">
+                    <div class="a1-height-30 a3-container-center a-footer-detail">{{lunarDate}}</div>
+                    <div class="a1-height-30 a3-container-center a-footer-note">{{sexagesimalCycleDate}}</div>
+                </div>
+            </div>
+
+            <div class="a-footer-item a1-relative">
+                <div class="a1-text-center a-title">Tháng</div>
+                <div class="a-row-dot">
+                    <div class="line"></div>
+                    <div class="dot-large" style="background-color: #ff80d5">
+                        <div class="dot-small" style="background-color: #e60099"></div>
+                    </div>
+                </div>
+                <div text-center class="a1-container ">
+                    <div class="a1-height-30 a3-container-center a-footer-detail">{{lunarMonth}}</div>
+                    <div class="a1-height-30 a3-container-center a-footer-note">{{sexagesimalCycleMonth}}</div>
+                </div>
+            </div>
+
+            <div class="a-footer-item a1-relative">
+                <div class="a1-text-center a-title">Năm</div>
+                <div class="a-row-dot">
+                    <div class="line"></div>
+                    <div class="dot-large" style="background-color: #ffcc99">
+                        <div class="dot-small" style="background-color:  #ff8000"></div>
+                    </div>
+                </div>
+
+                <div text-center class="a1-container ">
+                    <div class="a1-height-30 a3-container-center a-footer-detail">{{lunarYear}}</div>
+                    <div class="a1-height-30 a3-container-center a-footer-note">{{sexagesimalCycleYear}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
+<div padding-top class="a1-container-top a1-z-10">
+    <div class="height-56 a3-container a3-justify-between a3-items-center">
+        <div margin-left class="a3-container a-header-button" (tap)="pickSolarDate()">
+            <img src="assets/departure/btn_calendar.png">
+        </div>
+        <div class="a-header-title" (tap)="pickSolarDate()">
+            <div text-center>
+                <ion-icon margin-right ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+                Tháng {{solarMonth}}/{{solarYear}}
+                <ion-icon margin-left ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+            </div>
+        </div>
+        <div margin-right class="a3-container a-header-button" (tap)="onClickHome()">
+            <img src="assets/departure/btn_notification.png">
+        </div>
+    </div>
+</div>

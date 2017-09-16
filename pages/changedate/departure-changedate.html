@@ -1,0 +1,89 @@
+<ion-content no-bounce>
+    <!-- <div style="height:20px"></div> -->
+    <div class="change-date-header a1-relative a3-container a3-justify-between a3-items-center">
+        <div style="height:20px"></div>
+        <div margin-left margin-right class="a3-container a-header-button a1-absolute a1-left" (click)="pickSolarDate($event)">
+            <img src="assets/departure/btn_calendar.png">
+        </div>
+        <div class="a-header-title">
+            <div text-center>Đổi ngày</div>
+            <div text-center>
+                <span class="today">Hôm nay</span>
+                <span class="date-today">{{this.todayInSolar.dateString}}</span>
+            </div>
+        </div>
+
+        <div margin-right class="a3-container a-header-button a1-absolute a1-right">
+            <img src="assets/departure/btn_notification.png">
+        </div>
+        <div style="height:20px"></div>
+    </div>
+    <div style="height:20px"></div>
+    <div class="change-date-body a3-container-center">
+        <div class="solar-date width-40 ">
+            <div class="header a3-container-center">
+                <span>Dương lịch</span>
+            </div>
+            <div id="solar-date" class="content a3-container-center">
+                <div class="bg-active">
+                </div>
+                <div class="change-date-col solar-col" index="0">
+                    <div class="item"></div>
+                    <div class="item " *ngFor="let date of datas[0]" [class.day-active]="!load_filter && date== day_filter[0].day"><span>{{date}}</span>
+                    </div>
+                    <div class="item"></div>
+                </div>
+                <div class="border"></div>
+                <div class="change-date-col solar-col" index="1">
+                    <div class="item"></div>
+                    <div class="item" *ngFor="let month of datas[1]" [class.month-active]="!load_filter && month==day_filter[0].month"><span>{{month}}</span></div>
+                    <div class="item"></div>
+                </div>
+                <div class="border"></div>
+                <div class="change-date-col solar-col" index="2">
+                    <div class="item"></div>
+                    <div class="item" *ngFor="let year of datas[2]" [class.year-active]="!load_filter && year==day_filter[0].year"><span>{{year}}</span></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </div>
+        <div class="icon width-10">
+            <img src="assets/departure/icon_arrow.png" alt="">
+        </div>
+        <div class="lunar-date width-40">
+            <div class="header a3-container-center">
+                <span> Âm lịch </span>
+            </div>
+            <div class="content a3-container-center">
+                <div class="bg-active"></div>
+                <div class="change-date-col lunar-col" index="3">
+                    <div class="item"></div>
+                    <div class="item" *ngFor="let date of lunarMonth" [class.day-active]="!load_filter && date== day_filter[1].day"><span>{{date}}</span></div>
+                    <div class="item"></div>
+                </div>
+                <div class="border"></div>
+
+                <div class="change-date-col lunar-col" index="4">
+                    <div class="item"></div>
+                    <div class="item" *ngFor="let month of datas[1]" [class.month-active]="!load_filter && month== day_filter[1].month"><span>{{month}}</span></div>
+                    <div class="item"></div>
+                </div>
+                <div class="border"></div>
+
+                <div class="change-date-col lunar-col" index="5">
+                    <div class="item"></div>
+                    <div class="item" *ngFor="let year of datas[2]" [class.year-active]="!load_filter && year== day_filter[1].year"><span>{{year}}</span></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="zodiac-block a3-container-center">
+        <div class="date-detail a3-container-center">Chi tiết ngày</div>
+    </div>
+    <div class="zodiac-comment">
+        <span class="day-name">{{selectedDate.nameOfDay}} - {{selectedDate.dateString}} </span>
+        <span class="day-comment" *ngIf="selectedDate.comment">" {{selectedDate.comment}} "</span>
+    </div>
+</ion-content>

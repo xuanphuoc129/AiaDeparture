@@ -1,0 +1,40 @@
+<div class="a-header a1-container-top a1-z-10">
+    <div style="height:20px"></div>
+
+    <div class="height-56 a3-container-center">
+        <div class="a-header-title">
+            Mở rộng
+        </div>
+        <div margin-right class="a1-absolute  a1-right a-header-button">
+            <img src="assets/departure/icon/btn_setting.png">
+        </div>
+    </div>
+    <div style="height:20px"></div>
+</div>
+<ion-content>
+    <div style="height:96px"></div>
+    <div padding-left padding-right class="body-content a1-relative">
+        <div text-left margin-top margin-bottom>Đăng nhập với tài khoản</div>
+        <div class="a3-container">
+            <div class="facebook-button">
+                <img src="assets/departure/icon/btn_facebook.png">
+            </div>
+            <div style="width: 30px"></div>
+            <div class="google-button">
+                <img src="assets/departure/icon/btn_google.png">
+            </div>
+        </div>
+        <div margin-top class="a3-container-center">
+            <div class="line"></div>
+        </div>
+        <ion-row margin-top>
+            <ion-col col-6 *ngFor="let option of more_options;let i = index" class="a3-container">
+                <div *ngIf="i%2==1" style="width:20px"></div>
+                <div class="icon-option">
+                    <img [src]="option.icon">
+                </div>
+                <div text-left class="name-option">{{option.name_option}}</div>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

@@ -1,0 +1,151 @@
+page-departure-changedate {
+    ion-content {
+        // background-image: url('../assets/departure/background/background-home.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .scroll-content {
+            // background-color: rgba(17, 34, 51, 0.5);
+        }
+    }
+    $heiderHeight: 60px;
+    $titleHeight: 30px;
+    $rowHeight: 56px;
+    $background: linear-gradient(to right, #17cce9, #34a1ca);
+    .change-date-header {
+        height: 96px;
+        color: #FFF;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        background: $background;
+        // border-bottom: solid 1px #123;
+        .today {
+            height: $heiderHeight/2;
+            font-size: .7em;
+            color: #FFF;
+            border: solid 1px #FFF;
+            border-radius: 10px;
+            padding: 0 8px;
+            text-transform: none;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        .date-today {
+            font-size: .8em;
+        }
+        .a-header-button {
+            padding: 0.5em;
+            border-radius: 50%;
+            border: 1px solid white;
+        }
+        .a-header-button img {
+            height: 1.8em;
+        }
+        .a-header-title {
+            font-size: 5vw;
+            text-align: center;
+            color: white;
+        }
+    }
+    .width-40 {
+        width: 40%;
+    }
+    .width-10 {
+        width: 10%;
+    }
+    .change-date-body {
+        .header {
+            background: $background;
+            height: $titleHeight;
+            text-align: center;
+            color: #FFF;
+            border-radius: 20px;
+        }
+        .content {
+            position: relative;
+            height: $rowHeight * 3;
+            .bg-active {
+                position: absolute;
+                top: $rowHeight;
+                left: 0;
+                width: 100%;
+                height: $rowHeight;
+                z-index: -1;
+                background: #f2f2f2;
+                border-radius: 20px;
+                opacity: 0.3;
+                // color: red;
+            }
+            .border {
+                height: 80%;
+                width: 1px;
+                background-color: #ccc;
+                opacity: 0.5;
+            }
+            .change-date-col {
+                width: 33%;
+                height: $rowHeight * 3;
+                float: left;
+                overflow: auto;
+                .item {
+                    width: 100%;
+                    height: $rowHeight;
+                    color: #a6a6a6;
+                    text-align: center;
+                    span {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        height: $rowHeight;
+                        line-height: $rowHeight;
+                        white-space: nowrap;
+                        font-size: 1.3em;
+                    }
+                }
+                .day-active {
+                    color: #e6e600;
+                    font-weight: bold;
+                }
+                .month-active {
+                    color: #ff1a8c;
+                    font-weight: bold;
+                }
+                .year-active {
+                    color: #ff9933;
+                    font-weight: bold;
+                }
+            }
+        }
+        .icon {
+            margin-top: 32px;
+            padding: 8px;
+        }
+    }
+    .zodiac-block {
+        margin-top: 20px;
+        height: $titleHeight;
+        width: 100%;
+        .date-detail {
+            width: 90%;
+            border-radius: 15px;
+            background: $background;
+            height: $titleHeight;
+            color: #fff;
+        }
+    }
+    .zodiac-comment {
+        padding: 5%;
+        .day-name {
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #34a1ca;
+            white-space: 5px;
+        }
+        .day-comment {
+            font-size: 1em;
+        }
+    }
+}
