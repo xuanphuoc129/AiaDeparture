@@ -1,0 +1,994 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.ion-diagnostics-toast-message {
+    padding: 0px !important;
+}
+
+.footer-md::before,
+.tabs-md[tabsPlacement="bottom"]>.tabbar::before {
+    top: 0px;
+    bottom: 0px;
+    height: 0;
+}
+
+$appcolor: #42337e;
+$toolbar-height: 56px;
+$statusbar-height: 20px;
+$header-height: 56px;
+$content-height: calc(100vh - 56px);
+$inputHeight: 40px;
+$segment-height: 50px;
+$line-height: 20px;
+// ===============================Start Pure Layout CSS=======================================
+.a1-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.a1-container-absolute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.a1-container-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.a1-container-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.a1-content-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.a1-inline-block {
+    display: inline-block;
+}
+
+.a1-inline {
+    display: inline;
+}
+
+.a1-block {
+    display: block;
+}
+
+.a1-relative {
+    position: relative;
+}
+
+.a1-absolute {
+    position: absolute;
+}
+
+.a1-fill-parent {
+    width: 100%;
+    height: 100%;
+}
+
+.a1-top-left {
+    top: 0px;
+    left: 0px;
+}
+
+.a1-top {
+    top: 0px;
+}
+
+.a1-bottom {
+    bottom: 0px;
+}
+
+.a1-left {
+    left: 0px;
+}
+
+.a1-right {
+    right: 0px;
+}
+
+.a1-text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.a1-text-center {
+    text-align: center;
+}
+
+.a1-text-right {
+    text-align: right;
+}
+
+.a1-text-left {
+    text-align: left;
+}
+
+.a1-no-margin {
+    margin: 0px;
+}
+
+.a1-margin {
+    margin: 16px;
+}
+
+.a1-margin-left {
+    margin-left: 16px;
+}
+
+.a1-margin-right {
+    margin-right: 16px;
+}
+
+.a1-margin-top {
+    margin-top: 16px;
+}
+
+.a1-margin-bottom {
+    margin-bottom: 16px;
+}
+
+.a1-margin-auto {
+    margin: 0 auto;
+}
+
+.a1-no-padding {
+    padding: 0px;
+}
+
+.a1-padding {
+    padding: 16px;
+}
+
+.a1-padding-left {
+    padding-left: 16px;
+}
+
+.a1-padding-right {
+    padding-right: 16px;
+}
+
+.a1-padding-top {
+    padding-top: 16px;
+}
+
+.a1-padding-bottom,
+{
+    padding-bottom: 16px;
+}
+
+.a1-width-10 {
+    width: 10%;
+}
+
+.a1-width-20 {
+    width: 20%;
+}
+
+.a1-width-25 {
+    width: 25%;
+}
+
+.a1-width-30 {
+    width: 30%;
+}
+
+.a1-width-33 {
+    width: 33.33%;
+}
+
+.a1-width-40 {
+    width: 40%;
+}
+
+.a1-width-50 {
+    width: 50%;
+}
+
+.a1-width-60 {
+    width: 60%;
+}
+
+.a1-width-66 {
+    width: 66, 66%;
+}
+
+.a1-width-70 {
+    width: 70%;
+}
+
+.a1-width-80 {
+    width: 80%;
+}
+
+.a1-width-90 {
+    width: 90%;
+}
+
+.a1-width-100 {
+    width: 100%;
+}
+
+.a1-height-10 {
+    height: 10%;
+}
+
+.a1-height-20 {
+    height: 20%;
+}
+
+.a1-height-25 {
+    height: 25%;
+}
+
+.a1-height-30 {
+    height: 30%;
+}
+
+.a1-height-33 {
+    height: 33.33%;
+}
+
+.a1-height-40 {
+    height: 40%;
+}
+
+.a1-height-50 {
+    height: 50%;
+}
+
+.a1-height-60 {
+    height: 60%;
+}
+
+.a1-height-66 {
+    height: 66, 66%;
+}
+
+.a1-height-70 {
+    height: 70%;
+}
+
+.a1-height-80 {
+    height: 80%;
+}
+
+.a1-height-90 {
+    height: 90%;
+}
+
+.a1-height-100 {
+    height: 100%;
+}
+
+.a1-toolbar-height {
+    height: $toolbar-height;
+}
+
+.a1-statusbar-height {
+    height: $statusbar-height;
+}
+
+.a1-header-height {
+    height: $header-height;
+}
+
+.a1-content-height {
+    height: $content-height;
+}
+
+.a1-content {
+    height: $content-height;
+    overflow-y: auto;
+}
+
+.a1-circle {
+    border-radius: 50%;
+}
+
+.a1-shadow-bottom {
+    box-shadow: 0px 1px 8px #222;
+}
+
+.a1-z-1 {
+    z-index: 1;
+}
+
+.a1-z-2 {
+    z-index: 2;
+}
+
+.a1-z-3 {
+    z-index: 3;
+}
+
+.a1-z-4 {
+    z-index: 4;
+}
+
+.a1-z-5 {
+    z-index: 5;
+}
+
+.a1-z-6 {
+    z-index: 6;
+}
+
+.a1-z-7 {
+    z-index: 7;
+}
+
+.a1-z-8 {
+    z-index: 8;
+}
+
+.a1-z-9 {
+    z-index: 9;
+}
+
+.a1-z-10 {
+    z-index: 10;
+}
+
+.a1-z-100 {
+    z-index: 100;
+}
+
+// ===============================End Pure Layout CSS=======================================
+// ===============================Start Flex CSS=======================================
+
+/*Display*/
+
+.a3-container {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.a3-container-center {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.a3-container-inline {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+}
+
+.a3-flex-1 {
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+
+/*Align Items*/
+
+.a3-items-start {
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+.a3-items-end {
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+}
+
+.a3-items-center {
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.a3-items-stretch {
+    align-items: stretch;
+    -webkit-align-items: stretch;
+}
+
+.a3-items-baseline {
+    align-items: baseline;
+    -webkit-align-items: baseline;
+}
+
+.a3-items-inherit {
+    align-items: inherit;
+    -webkit-align-items: inherit;
+}
+
+
+/*Align Content*/
+
+.a3-content-start {
+    align-content: flex-start;
+    -webkit-align-content: flex-start;
+}
+
+.a3-content-center {
+    align-content: center;
+    -webkit-align-content: center;
+}
+
+.a3-content-end {
+    align-content: flex-end;
+    -webkit-align-content: flex-end;
+}
+
+.a3-content-stretch {
+    align-content: stretch;
+    -webkit-align-content: stretch;
+}
+
+.a3-content-between {
+    align-content: space-between;
+    -webkit-align-content: space-between;
+}
+
+.a3-content-around {
+    align-content: space-around;
+    -webkit-align-content: space-around;
+}
+
+
+/*Justify content*/
+
+.a3-justify-start {
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.a3-justify-center {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.a3-justify-end {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+.a3-justify-between {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.a3-justify-around {
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+
+/*Align self*/
+
+.a3-self-start {
+    align-self: flex-start;
+    -webkit-align-self: flex-start;
+}
+
+.a3-self-center {
+    align-self: center;
+    -webkit-align-self: center;
+}
+
+.a3-self-end {
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+}
+
+.a3-self-auto {
+    align-self: auto;
+    -webkit-align-self: auto;
+}
+
+.a3-self-baseline {
+    align-self: baseline;
+    -webkit-align-self: baseline;
+}
+
+.a3-self-stretch {
+    align-self: stretch;
+    -webkit-align-self: stretch;
+}
+
+
+/*Flex direction*/
+
+.a3-row {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.a3-row-reverse {
+    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+}
+
+.a3-column {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.a3-column-reverse {
+    flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+}
+
+
+/*Flex wrap*/
+
+.a3-nowrap {
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+}
+
+.a3-wrap {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.a3-wrap-reverse {
+    flex-wrap: wrap-reverse;
+    -webkit-flex-wrap: wrap-reverse;
+}
+
+
+/*Flex flow*/
+
+.a3-flow-row-wrap {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.a3-flow-row-nowrap {
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+}
+
+.a3-flow-row-wrap-reverse {
+    flex-flow: row wrap-reverse;
+    -webkit-flex-flow: row wrap-reverse;
+}
+
+.a3-flow-column-wrap {
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+}
+
+.a3-flow-column-nowrap {
+    flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+}
+
+.a3-flow-column-wrap-reverse {
+    flex-flow: column wrap-reverse;
+    -webkit-flex-flow: column wrap-reverse;
+}
+
+// ===============================End Flex CSS=========================================
+// =============================== Begin Lottery Apps ==========================
+.a-user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: solid 3px chocolate;
+}
+
+.a-user-name {
+    color: white;
+    text-shadow: 1px 1px 2px chocolate;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.lottery-menu-header {
+    background-color: map-get($colors, danger);
+    font-weight: bold;
+    color: white;
+    font-size: 1.1em;
+    height: $header-height;
+    margin: 0 !important;
+}
+
+.m-header {
+    position: relative;
+    width: 100%;
+    height: $header-height;
+    color: white;
+    background-color: map-get($colors, danger);
+}
+
+.m-header-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    flex: 1;
+}
+
+.header-button-icon {
+    font-size: 1.6em;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+
+.header-button-icon-inactive {
+    color: gray;
+}
+
+.lottery-ads {
+    height: 20vh;
+}
+
+// =============================== End Lottery Apps ==========================
+// =============================== Begin Busino Apps ==========================
+$footer-height: 72px;
+$busino-content-height: calc(100vh - 56px - 72px);
+$search-modal-height: calc(100vh - 72px);
+.busino-header {
+    width: 100%;
+    height: $header-height;
+    color: black;
+    background-color: rgba(white, .7);
+}
+
+.busino-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    color: black;
+    background-color: rgba(white, .9);
+}
+
+.footer-button-icon {
+    font-size: 2.6em;
+    line-height: 1.6em;
+    // font-weight: bold;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+// =============================== End Busino Apps ==========================
+// WIADS APPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP DONT TOUCH :->
+// .wa-ion-content {
+//     background-color: map-get($WiadsColors, background);
+//     line-height: map-get($WiadsSize, lineheight);
+//     font-size: map-get($WiadsSize, fontsize);
+// }
+// .wa-header {
+//     width: 100%;
+//     height: map-get($WiadsSize, header);
+//     line-height: map-get($WiadsSize, header);
+//     text-align: center;
+//     background-color: map-get($WiadsColors, primary);
+//     color: #FFF;
+//     font-weight: bold;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: map-get($WiadsZindex, header);
+//     font-size: 1.2em;
+//     overflow: hidden;
+//     white-space: nowrap;
+//     text-overflow: ellipsis;
+//     display: block;
+// }
+// .wa-header-icon {
+//     position: absolute;
+//     padding: 0px 16px;
+//     right: 0;
+// }
+// .wa-header-icon-left {
+//     position: absolute;
+//     left: 0;
+//     height: 100%;
+//     font-size: 1.6em;
+//     padding: 2px 16px;
+// }
+// .wa-content {
+//     width: 100%;
+//     height: 100%;
+//     padding-top: map-get($WiadsSize, header);
+// }
+// .wa-header-height {
+//     height: map-get($WiadsSize, header);
+// }
+// .wa-header-title {
+//     text-transform: uppercase;
+//     padding: 0px 30px;
+// }
+// .wa-input-group {
+//     padding: map-get($WiadsSize, lineheight);
+//     .col {
+//         padding: 0 5px;
+//     }
+//     background-color: #FFF;
+// }
+// .wa-input {
+//     height: map-get($WiadsSize, lineheight) * 2;
+//     line-height: map-get($WiadsSize, lineheight) * 2;
+//     padding: 0 10px;
+//     border-radius: 5px;
+//     border: solid 1px map-get($WiadsColors, gray);
+//     color: map-get($WiadsColors, gray);
+//     width: 100%;
+//     display: flex;
+//     position: relative;
+//     overflow: hidden;
+//     i {
+//         margin: 0 5px;
+//         line-height: map-get($WiadsSize, lineheight) * 2;
+//         font-size: 1.2em;
+//     }
+//     span.text {
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//         // max-width: 100%;
+//     }
+//     .icon-right {
+//         position: absolute;
+//         right: 0;
+//         padding: 0 5px;
+//         color: map-get($WiadsColors, secondary);
+//         display: block;
+//         height: 100%;
+//         border-radius: 5px;
+//         background-color: #FFF;
+//     }
+// }
+// .wa-title-bar {
+//     width: 100%;
+//     height: map-get($WiadsSize, lineheight) * 2;
+//     line-height: map-get($WiadsSize, lineheight) * 2;
+//     padding-left: map-get($WiadsSize, lineheight);
+//     border-left: solid 10px map-get($WiadsColors, primary);
+//     background-color: map-get($WiadsColors, pink);
+// }
+// .wa-title {
+//     width: 100%;
+//     height: map-get($WiadsSize, lineheight) * 2;
+//     line-height: map-get($WiadsSize, lineheight) * 2;
+// }
+// .wa-search-inputs {
+//     width: 100%;
+//     display: flex;
+//     overflow-x: auto;
+//     border-radius: 5px;
+//     color: gray;
+//     border: solid 1px gray;
+//     padding: 5px 10px;
+//     flex-wrap: nowrap;
+// }
+// .wa-search-inputs-item {
+//     border-radius: 10px;
+//     padding: 0 5px;
+//     margin: 0 3px;
+//     white-space: nowrap;
+//     &.active {
+//         background-color: #f0f8e8;
+//         color: map-get($WiadsColors, secondary);
+//     }
+// }
+// [nowrap] {
+//     white-space: nowrap;
+// }
+// [flex] {
+//     display: flex;
+// }
+// // END WIADS APP
+// .bold-text {
+//     font-weight: bold !important;
+// }
+// .divider {
+//     background-color: gray;
+//     width: 100%;
+//     height: 1px;
+// }
+// .color-primary {
+//     color: map-get($WiadsColors, primary)
+// }
+// // new69 menu
+// .label-md {
+//     margin: 0;
+// }
+// .item-block {
+//     min-height: 3.2rem;
+// }
+// .list-header-md {
+//     min-height: 3rem;
+//     margin-top: 5%;
+// }
+// .list-header-md {
+//     border-top: none;
+// }
+// .color-primary {
+//     color: map-get($WiadsColors, primary)
+// }
+// // =================================================
+// //Quoc bao ticket
+// .qb-content {
+//     width: 100%;
+//     height: auto;
+//     background-color: rgb(244, 242, 243);
+//     padding: 10px 0;
+// }
+// .qb-footer {
+//     z-index: 99;
+//     width: 100%;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     background-color: #FFF;
+//     padding: 10px 30px;
+//     text-align: center;
+// }
+// .qb-header {
+//     z-index: 99;
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-color: map-get($QBTKTColors, primary);
+//     background: -webkit-gradient(linear, left top, right top, from(#007628), to(#69a718));
+//     background: linear-gradient(to right, #007628, #69a718);
+//     background: -webkit-linear-gradient(to right, #007628, #69a718);
+//     overflow: hidden;
+//     .a-header-toolbar {
+//         background-image: url("../assets/qbtkt/home/top_bar_gradient.png");
+//         background-size: cover;
+//         background-position: left;
+//         position: relative;
+//         text-align: center;
+//         height: 60px;
+//         line-height: 20px;
+//         color: white;
+//         border-bottom: solid 1px rgba(221, 221, 221, 0.52);
+//         overflow: hidden;
+//         .title {
+//             width: 100%;
+//             text-align: center;
+//             padding: 10px 0 0 0;
+//             display: block;
+//             font-size: 1.2em;
+//             font-weight: bold;
+//         }
+//         .description {
+//             width: 100%;
+//             text-align: center;
+//             padding: 5px 0;
+//             display: block;
+//             font-size: .9em;
+//         }
+//     }
+//     .button-left {
+//         display: block;
+//         padding: 10px;
+//         position: absolute;
+//         height: 100%;
+//         left: 0;
+//         top: 0;
+//         font-size: 2.2em;
+//     }
+//     .button-right {
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         height: 40px;
+//         margin-top: 4px;
+//         padding: 4px 0px 4px 4px;
+//         z-index: 99;
+//     }
+//     .logo {
+//         position: absolute;
+//         right: 20px;
+//         top: -20px;
+//         width: 30%;
+//         z-index: 1;
+//     }
+// }
+// .qb-section {
+//     background-color: #FFF;
+//     border-radius: 5px;
+//     padding: 10px 10px 10px 16px;
+//     position: relative;
+//     margin-bottom: 10px;
+//     .section-header {
+//         width: 100%;
+//         line-height: 25px;
+//         height: 25px;
+//         .title {
+//             height: 100%;
+//             border-top-right-radius: 20px;
+//             border-bottom-right-radius: 20px;
+//             padding-left: 16px;
+//             margin-left: -16px;
+//             color: map-get($QBTKTColors, primary);
+//             background-color: rgb(240, 255, 220);
+//             display: inline-block;
+//             padding-right: 10px;
+//             font-weight: bold;
+//         }
+//         .button-right {
+//             float: right;
+//             height: 25px;
+//             padding: 0 5px;
+//             background-color: #FFF;
+//             color: map-get($QBTKTColors, blue);
+//             display: block;
+//             font-size: 1.8em;
+//         }
+//     }
+//     .section-body {
+//         margin-top: 10px;
+//     }
+//     .high-dot {
+//         width: 5px;
+//         height: 5px;
+//         vertical-align: middle;
+//         display: inline-block;
+//         background-color: gray;
+//         margin-right: 5px;
+//         border-radius: 50%;
+//         &+span {
+//             vertical-align: middle;
+//         }
+//     }
+// }
+// .bold {
+//     font-weight: bold;
+// }
+// .black {
+//     color: #000;
+// }
+// [flex-center] {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// [flex-wrap] {
+//     flex-wrap: wrap;
+// }
+// .qb-btn {
+//     background-color: map-get($QBTKTColors, primary);
+//     background-image: -webkit-gradient(linear, left top, right top, from(#84BF38), to(#007628));
+//     background-image: linear-gradient(to right, #84BF38, #007628, #007628);
+//     -webkit-background-image: -webkit-gradient(linear, left top, right top, from(#84BF38), to(#007628));
+//     -webkit-background-image: linear-gradient(to right, #84BF38, #007628, #007628);
+//     width: 100%;
+//     border-radius: 5px;
+//     height: 48px;
+//     line-height: 48px;
+//     color: #FFF;
+// }

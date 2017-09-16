@@ -1,0 +1,274 @@
+{
+    "Departure": [{
+            "month": [
+                1,
+                4,
+                7,
+                10
+            ],
+            "day": [{
+                    "id": 4,
+                    "nameofday": "Bảo Thương",
+                    "dayindex": [
+                        6,
+                        12,
+                        18,
+                        24,
+                        30
+                    ],
+                    "comment": "Xuất hành gặp cấp trên thì tuyệt vời, cầu tài được, mọi việc đều thuận lợi"
+                },
+                {
+                    "id": 5,
+                    "nameofday": "Đạo Tặc",
+                    "dayindex": [
+                        5,
+                        11,
+                        17,
+                        23,
+                        29
+                    ],
+                    "comment": "Rất xấu, xuất hành bị hại, mất của"
+                },
+                {
+                    "id": 2,
+                    "nameofday": "Thuần Dương",
+                    "dayindex": [
+                        4,
+                        10,
+                        16,
+                        22,
+                        28
+                    ],
+                    "comment": "Xuất hành thuận lợi, gặp người lớn vừa lòng, làm việc theo ý muốn, áo phẩm vinh quang"
+                },
+                {
+                    "id": 1,
+                    "nameofday": "Dương Phong",
+                    "dayindex": [
+                        1,
+                        7,
+                        13,
+                        19,
+                        25
+                    ],
+                    "comment": "Rất tốt, xuất hành thuận, cầu xin được như ý muốn, gặp Quý Nhân phù trợ"
+                },
+                {
+                    "id": 8,
+                    "nameofday": "Khu Thổ",
+                    "dayindex": [
+                        2,
+                        8,
+                        14,
+                        20,
+                        26
+                    ],
+                    "comment": "Ra đi nhỡ tàu, cầu không được, trên đường đi mất của, bất lợi"
+                },
+                {
+                    "id": 7,
+                    "nameofday": "Đường Kim",
+                    "dayindex": [
+                        3,
+                        9,
+                        15,
+                        21,
+                        27
+                    ],
+                    "comment": "Xuất hành tốt, có quý nhân phù trợ, tài lộc thông suốt, thưa kiện có lý phải"
+                }
+            ]
+        },
+        {
+            "month": [
+                2,
+                5,
+                8,
+                11
+            ],
+            "day": [{
+                    "id": 4,
+                    "nameofday": "Thiên Đường",
+                    "dayindex": [
+                        3,
+                        11,
+                        19,
+                        27
+                    ],
+                    "comment": "Xuất hành tốt, cầu tài được tài, cầu vợ được vợ, mọi việc như ý"
+                },
+                {
+                    "id": 3,
+                    "nameofday": "Thiên Môn",
+                    "dayindex": [
+                        2,
+                        10,
+                        18,
+                        26
+                    ],
+                    "comment": "Xuất hành, làm việc đều vừa ý, cầu được, ước thấy, mọi việc đều thông đạt"
+                },
+                {
+                    "id": 7,
+                    "nameofday": "Thiên Tài",
+                    "dayindex": [
+                        4,
+                        12,
+                        20,
+                        28
+                    ],
+                    "comment": "Nên xuất hành, cầu tài thắng lợi, được người giúp đỡ, mọi việc đều thuật lợi"
+                },
+                {
+                    "id": 10,
+                    "nameofday": "Thiên Tặc",
+                    "dayindex": [
+                        5,
+                        13,
+                        29
+                    ],
+                    "comment": "Xuất hành xấu, cầu tài không được, đi đường mất cắp, mọi việc đều xấu"
+                },
+                {
+                    "id": 6,
+                    "nameofday": "Thiên Đạo",
+                    "dayindex": [
+                        1,
+                        9,
+                        17,
+                        25
+                    ],
+                    "comment": "Xuất hành, cầu tài nên tránh dù được cũng mất mát tốn kém"
+                },
+                {
+                    "id": 1,
+                    "nameofday": "Thiên Thương",
+                    "dayindex": [
+                        8,
+                        16,
+                        21,
+                        24
+                    ],
+                    "comment": "Xuất hành để gặp cấp trên thì tuyệt vời"
+                },
+                {
+                    "id": 8,
+                    "nameofday": "Thiên Hầu",
+                    "dayindex": [
+                        7,
+                        15,
+                        23
+                    ],
+                    "comment": "Xuất hành nhiều xung, cãi cọ. Phải tránh, dễ xảy ra tai nạn chảy máu"
+                },
+                {
+                    "id": 2,
+                    "nameofday": "Thiên Dương",
+                    "dayindex": [
+                        6,
+                        14,
+                        22,
+                        30
+                    ],
+                    "comment": "Xuất hành tốt, có Quý Nhân phù trợ, mua bán may mắn, mọi việc đều thuận lợi"
+                }
+            ]
+        },
+        {
+            "month": [
+                3,
+                6,
+                9,
+                12
+            ],
+            "day": [{
+                    "id": 1,
+                    "nameofday": "Bạch Hổ Đầu",
+                    "dayindex": [
+                        2,
+                        10,
+                        18,
+                        26
+                    ],
+                    "comment": "Xuất hành, cầu tài đều được, đi đến đâu đều được thông đạt"
+                },
+                {
+                    "id": 6,
+                    "nameofday": "Bạch Hổ Kiếp",
+                    "dayindex": [
+                        3,
+                        11,
+                        19,
+                        27
+                    ],
+                    "comment": "Xuất hành, cầu tài đều được như ý muốn, đi hướng Nam, Bắc đều thuận"
+                },
+                {
+                    "id": 10,
+                    "nameofday": "Bạch Hổ Túc",
+                    "dayindex": [
+                        4,
+                        12,
+                        20,
+                        28
+                    ],
+                    "comment": "Cấm đi xa, làm việc gì cũng không thành công, rất xấu trong mọi việc"
+                },
+                {
+                    "id": 6,
+                    "nameofday": "Huyền Vũ",
+                    "dayindex": [
+                        5,
+                        13,
+                        21,
+                        29
+                    ],
+                    "comment": "Xuất hành thường gặp cãi cọ, gặp việc xấu không nên đi"
+                },
+                {
+                    "id": 8,
+                    "nameofday": "Chu Trước",
+                    "dayindex": [
+                        1,
+                        9,
+                        17,
+                        25
+                    ],
+                    "comment": "Xuất hành, cầu tài đều xấu, hay mất của, kiện cáo cũng thua vì đuối lý"
+                },
+                {
+                    "id": 9,
+                    "nameofday": "Thanh Long Túc",
+                    "dayindex": [
+                        8,
+                        16,
+                        24
+                    ],
+                    "comment": "Không nên đi xa, xuất hành tài lộc không có, kiện cáo đuối lý"
+                },
+                {
+                    "id": 3,
+                    "nameofday": "Thanh Long Kiếp",
+                    "dayindex": [
+                        7,
+                        15,
+                        23
+                    ],
+                    "comment": "Xuất hành 4 phương, 8 hướng đều tốt, trăm sự như ý muốn"
+                },
+                {
+                    "id": 3,
+                    "nameofday": "Thanh Long Đầu",
+                    "dayindex": [
+                        6,
+                        14,
+                        22,
+                        30
+                    ],
+                    "comment": "Xuất hành nên đi vào sáng sớm, cầu tài tháng lợi, mọi việc đều như ý"
+                }
+            ]
+        }
+    ]
+}
