@@ -1,8 +1,7 @@
-<ion-content no-bounce>
-    <!-- <div style="height:20px"></div> -->
-    <div class="change-date-header a1-relative a3-container a3-justify-between a3-items-center">
-        <div style="height:20px"></div>
-        <div margin-left margin-right class="a3-container a-header-button a1-absolute a1-left" (click)="pickSolarDate($event)">
+<div class="a-header a1-container-top a1-z-10">
+    <div style="height:20px"></div>
+    <div class="height-56 a3-container a3-justify-between a3-items-center">
+        <div margin-left class="a3-container a-header-button" (click)="pickSolarDate($event)">
             <img src="assets/departure/btn_calendar.png">
         </div>
         <div class="a-header-title">
@@ -12,14 +11,17 @@
                 <span class="date-today">{{this.todayInSolar.dateString}}</span>
             </div>
         </div>
-
-        <div margin-right class="a3-container a-header-button a1-absolute a1-right">
+        <div margin-right class="a3-container a-header-button">
             <img src="assets/departure/btn_notification.png">
         </div>
-        <div style="height:20px"></div>
     </div>
-    <div style="height:20px"></div>
-    <div class="change-date-body a3-container-center">
+    <div style="margin-bottom:5px"></div>
+</div>
+<ion-content no-bounce>
+    <!-- <div style="height:20px"></div> -->
+
+    <div style="height:76px"></div>
+    <div margin-top class="change-date-body a3-container-center">
         <div class="solar-date width-40 ">
             <div class="header a3-container-center">
                 <span>Dương lịch</span>
