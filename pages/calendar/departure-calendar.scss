@@ -58,12 +58,13 @@ page-departure-calendar {
         }
     }
     .selected {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         border: solid 2px #4db8ff;
         border-radius: 50%;
         z-index: -1;
         position: absolute;
+        top: 0;
     }
     .date-today {
         width: 45px;
@@ -72,6 +73,7 @@ page-departure-calendar {
         border-radius: 50%;
         z-index: -1;
         position: absolute;
+        top: 0;
         border: none !important;
     }
     .calendar-th {
