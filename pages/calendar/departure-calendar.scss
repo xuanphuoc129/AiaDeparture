@@ -29,9 +29,6 @@ page-departure-calendar {
     .calendar-block {
         // background: linear-gradient(to right, #17cce9, #34a1ca);
         width: 100%;
-        // padding: 1px 0 0 1px;
-        /*for table border*/
-        // border-radius: $calendar-radius;
     }
     .grid {
         padding: 0;
@@ -52,16 +49,21 @@ page-departure-calendar {
         -ms-flex-align: center;
         align-items: center;
         // color: #FFF;
-        &.selected {
-            border: solid 2px #4db8ff;
-            border-radius: 50%;
-        }
+        // &.selected {
+        //     border: solid 2px #4db8ff;
+        //     border-radius: 50%;
+        // }
         &.today {
             border: none;
-            background-color: rgba(236, 117, 133, 0.50);
-            border-radius: 50%;
-            // width: 50px;
         }
+    }
+    .selected {
+        width: 45px;
+        height: 45px;
+        border: solid 2px #4db8ff;
+        border-radius: 50%;
+        z-index: -1;
+        position: absolute;
     }
     .date-today {
         width: 45px;
@@ -70,8 +72,7 @@ page-departure-calendar {
         border-radius: 50%;
         z-index: -1;
         position: absolute;
-        top: 0;
-        border: none;
+        border: none !important;
     }
     .calendar-th {
         height: $line-height * 1.5;
@@ -92,12 +93,8 @@ page-departure-calendar {
         flex-wrap: wrap;
         padding-left: 16px;
         padding-right: 16px;
-        // height: 140px;
-        // margin-top: 16px;
         .col {
             line-height: $line-height;
-            padding-right: 5px;
-            // width: 45px;
             width: 14.2857142857%;
             -ms-flex-preferred-size: initial;
             flex-basis: initial;
@@ -109,8 +106,14 @@ page-departure-calendar {
             font-size: 1.2em;
         }
         .lunar-date {
-            float: right;
             font-size: 0.8em;
+            display: inline-block;
+            background-color: transparent;
+            vertical-align: middle;
+            margin-left: 16px;
+            // position: absolute;
+            // bottom: 6px;
+            // right: 7px;
         }
     }
     .color-sunday {
@@ -128,7 +131,7 @@ page-departure-calendar {
         vertical-align: middle;
         position: absolute;
         left: 10px;
-        bottom: 6px;
+        bottom: 5px;
     }
     .status-zodiac {
         display: inline-block;
