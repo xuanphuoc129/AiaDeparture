@@ -28,14 +28,15 @@
                 <ion-col *ngFor="let day of dayOfWeek"><span nowrap>{{day}}</span></ion-col>
             </ion-row>
             <ion-row margin-top class="calendar-day">
-                <ion-col (click)="selectDeparture(departure)" [class.today]="departure && departure.dateString == currentDate.dateString" [class.selected]="departure &&  departure.dateString == selectedDate.dateString" *ngFor="let departure of departureDays; let i = index">
+                <ion-col class="a3-container-center" (click)="selectDeparture(departure)" *ngFor="let departure of departureDays; let i = index">
                     <div *ngIf="departure">
                         <span class="solar-date" [class.color-sunday]="i==0 || i%7==0" [class.color-saturday]="(i+1)%7==0">{{getDate(departure.date)}}</span>
                         <span class="status-day status-{{departure.zodiacStatus}}"></span>
                         <span class="lunar-date" *ngIf="departure.lunarDate != 1">{{departure.lunarDate}}  </span>
                         <span class="lunar-date" *ngIf="departure.lunarDate == 1">{{departure.lunarDate+'/'+departure.lunarMonth}}</span>
                     </div>
-                    <!-- <div *ngIf="departure && departure.dateString == currentDate.dateString" class="date-today"></div> -->
+                    <div *ngIf="departure &&  departure.dateString == selectedDate.dateString && departure.dateString != currentDate.dateString" class="selected a3-container-center"></div>
+                    <div *ngIf="departure && departure.dateString == currentDate.dateString" class="date-today a3-container-center"></div>
                 </ion-col>
             </ion-row>
         </ion-grid>
